@@ -25,12 +25,12 @@ export const Sidebar = () => {
   const opciones = [
     { text: "Inicio", icon: <HomeIcon /> },
     { text: "Inventario", icon: <InventoryIcon /> },
+    { text: "Movimientos", icon: <LoginIcon /> },
+    { text: "Devoluciones", icon: <AutorenewIcon /> },
     { text: "Reportes", icon: <BarChartIcon /> },
     { text: "Técnicos", icon: <EngineeringIcon /> },
     { text: "Áreas", icon: <ApartmentIcon /> },
-    { text: "Entrada", icon: <LoginIcon /> },
-    { text: "Salidas", icon: <LogoutIcon /> },
-    { text: "Devoluciones", icon: <AutorenewIcon /> },
+    // { text: "Salidas", icon: <LogoutIcon /> },
   ];
 
   const drawerWidth = 240;

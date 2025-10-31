@@ -21,7 +21,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import ModalAgregarMaterial from "./ModalAgregarMaterial";
 
-export const Inventario = () => {
+export const Devoluciones = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -62,10 +62,10 @@ export const Inventario = () => {
       >
         <Box>
           <Typography variant="h5" fontWeight="bold">
-            Inventario de materiales
+           Devoluciones de materiales
           </Typography>
           <Typography sx={{ fontSize: "15px" }}>
-            Gestiona el inventario de materiales y equipos eléctricos
+           Gestiona las devoluciones de productos a proveedores
           </Typography>
         </Box>
       </Box>
@@ -105,7 +105,7 @@ export const Inventario = () => {
               startIcon={<AddIcon />}
               onClick={handleOpen}
             >
-              Nuevo material
+              Nueva devolucion
             </Button>
           </Box>
         </Box>
@@ -124,7 +124,7 @@ export const Inventario = () => {
           }}
         >
           <TextField
-            placeholder="Buscar materiales"
+            placeholder="Buscar devoluciones"
             variant="outlined"
             size="small"
             InputProps={{
@@ -144,21 +144,21 @@ export const Inventario = () => {
             }}
           />
 
-          <FormControl sx={{ width: "20%" }} size="small">
+          {/* <FormControl sx={{ width: "20%" }} size="small">
             <InputLabel>Almacén</InputLabel>
             <Select label="Almacén">
               <MenuItem value="all">Todos los almacenes</MenuItem>
               <MenuItem value="a">Almacén A</MenuItem>
               <MenuItem value="b">Almacén B</MenuItem>
             </Select>
-          </FormControl>
+          </FormControl> */}
 
           <FormControl sx={{ width: "35%" }} size="small">
-            <InputLabel>Categoría</InputLabel>
-            <Select label="Categoría">
-              <MenuItem value="cables">Cables</MenuItem>
-              <MenuItem value="medidores">Medidores</MenuItem>
-              <MenuItem value="postes">Postes</MenuItem>
+            <InputLabel>Estado</InputLabel>
+            <Select label="Estado">
+              <MenuItem value="Aprobado">Aprobado</MenuItem>
+              <MenuItem value="Pendiente">Pendiente</MenuItem>
+              <MenuItem value="Rechazado">Rechazado</MenuItem>
             </Select>
           </FormControl>
 
@@ -280,4 +280,4 @@ export const Inventario = () => {
   );
 };
 
-export default Inventario;
+export default Devoluciones;
