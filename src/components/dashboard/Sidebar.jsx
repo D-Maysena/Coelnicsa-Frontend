@@ -17,6 +17,7 @@ import LoginIcon from "@mui/icons-material/Login";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
 import BarChartIcon from "@mui/icons-material/BarChart";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import { useSidebarStore } from "../../store/useSidebarStore";
 
 export const Sidebar = () => {
@@ -28,6 +29,7 @@ export const Sidebar = () => {
     { text: "Movimientos", icon: <LoginIcon /> },
     { text: "Devoluciones", icon: <AutorenewIcon /> },
     { text: "Reportes", icon: <BarChartIcon /> },
+    { text: "Proveedores", icon: <LocalShippingIcon /> },
     { text: "Técnicos", icon: <EngineeringIcon /> },
     { text: "Áreas", icon: <ApartmentIcon /> },
     // { text: "Salidas", icon: <LogoutIcon /> },
