@@ -27,7 +27,7 @@ export const Sidebar = () => {
     { text: "Inicio", icon: <HomeIcon /> },
     { text: "Inventario", icon: <InventoryIcon /> },
     { text: "Reportes", icon: <BarChartIcon /> },
-   // { text: "Proveedores", icon: <LocalShippingIcon /> },
+    { text: "Proveedores", icon: <LocalShippingIcon /> },
     { text: "Técnicos", icon: <EngineeringIcon /> },
     { text: "Áreas", icon: <ApartmentIcon /> },
     { text: "Entrada", icon: <LoginIcon /> },

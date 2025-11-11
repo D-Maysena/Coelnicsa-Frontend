@@ -1,9 +1,11 @@
 import { Box } from "@mui/material";
 import Sidebar from "../../components/dashboard/Sidebar";
+
 import Inicio from "../../components/dashboard/Inicio";
 import { useSidebarStore } from "../../store/useSidebarStore";
 import Inventario from "../../components/dashboard/Inventario";
 import Reportes from "../../components/dashboard/Reportes";
+import Proveedores from "../../components/dashboard/Proveedores";
 
 export const Home = () => {
   const { optionSelected } = useSidebarStore();
@@ -16,7 +18,7 @@ export const Home = () => {
         {optionSelected === 'Inicio' && <Inicio/>}
         {optionSelected === 'Inventario' && <Inventario/>}
         {optionSelected === 'Reportes' && <Reportes/>}
-      
+        {optionSelected === 'Proveedores' && <Proveedores/>}
 
     </Box>
   );
