@@ -29,7 +29,7 @@ export const Sidebar = () => {
     { text: "Movimientos", icon: <LoginIcon /> },
     { text: "Devoluciones", icon: <AutorenewIcon /> },
     { text: "Reportes", icon: <BarChartIcon /> },
-   // { text: "Proveedores", icon: <LocalShippingIcon /> },
+    { text: "Proveedores", icon: <LocalShippingIcon /> },
     { text: "Técnicos", icon: <EngineeringIcon /> },
     { text: "Áreas", icon: <ApartmentIcon /> },
     // { text: "Salidas", icon: <LogoutIcon /> },

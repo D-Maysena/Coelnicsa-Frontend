@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router";
-import Login from "../pages/auth/login";
-import Home from "../pages/dashboard/home";
+import { Route, Routes } from "react-router-dom";
+import Login from "../pages/auth/Login";
+import Home from "../pages/dashboard/Home";
 
 function AppRouter() {
   return (

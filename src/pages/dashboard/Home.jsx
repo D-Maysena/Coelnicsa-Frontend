@@ -1,12 +1,10 @@
 import { Box } from "@mui/material";
 import Sidebar from "../../components/dashboard/Sidebar";
+
 import Inicio from "../../components/dashboard/Inicio";
 import { useSidebarStore } from "../../store/useSidebarStore";
 import Inventario from "../../components/dashboard/Inventario";
 import Reportes from "../../components/dashboard/Reportes";
-import Entradas from "../../components/dashboard/Movimientos";
-import Devoluciones from "../../components/dashboard/Devoluciones";
-
 
 export const Home = () => {
   const { optionSelected } = useSidebarStore();
@@ -21,9 +19,6 @@ export const Home = () => {
         {optionSelected === 'Reportes' && <Reportes/>}
       
 
-        {optionSelected === 'Movimientos' && <Entradas/>}
-        {optionSelected === 'Devoluciones' && <Devoluciones/>}
-   
     </Box>
   );
 };
